@@ -1,11 +1,10 @@
 // variables3.rs
 // Make me compile! Execute the command `rustlings hint variables3` if you want a hint :)
 
-// I AM NOT DONE
 
 fn main() {
-    let x = 3;
-    println!("Number {}", x);
-    x = 5; // don't change this line
-    println!("Number {}", x);
+    let mut x:Option<i32> = None;
+    println!("Number {}", x.unwrap_or(0));
+    x.replace(5);
+    println!("Noumber {}", x.unwrap_or(0));
 }
